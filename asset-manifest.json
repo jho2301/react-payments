@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/react-payments/static/js/main.1071a7da.chunk.js",
-    "main.js.map": "/react-payments/static/js/main.1071a7da.chunk.js.map",
+    "main.js": "/react-payments/static/js/main.e0f71427.chunk.js",
+    "main.js.map": "/react-payments/static/js/main.e0f71427.chunk.js.map",
     "runtime-main.js": "/react-payments/static/js/runtime-main.438d50b5.js",
     "runtime-main.js.map": "/react-payments/static/js/runtime-main.438d50b5.js.map",
     "static/js/2.e1ed6544.chunk.js": "/react-payments/static/js/2.e1ed6544.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.438d50b5.js",
     "static/js/2.e1ed6544.chunk.js",
-    "static/js/main.1071a7da.chunk.js"
+    "static/js/main.e0f71427.chunk.js"
   ]
 }
