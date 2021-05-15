@@ -44,15 +44,8 @@ interface Props {
   margin?: string;
 }
 
-export const AddCardInputContainer: FC<Props> = ({ children, width, margin }) => (
-  <Container
-    flex
-    justifyContent="center"
-    alignItems="center"
-    backgroundColor={PALETTE.GRAY_100}
-    width={width}
-    margin={margin}
-  >
+export const AddCardInputContainer: FC<Props> = ({ children, ...otherProps }) => (
+  <Container flex justifyContent="center" alignItems="center" backgroundColor={PALETTE.GRAY_100} {...otherProps}>
     {children}
   </Container>
 );
