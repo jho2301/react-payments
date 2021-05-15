@@ -1,21 +1,11 @@
-export const GRAY = {
-  100: '#ECEBF1',
-  200: '#cccccc',
-  300: '#333333',
-};
+enum PALETTE {
+  BLACK_900 = '#000000',
+  GRAY_100 = '#ECEBF1',
+  GRAY_200 = '#cccccc',
+  GRAY_300 = '#333333',
+  YELLOW_500 = '#cbba64',
+  MINT_500 = '#04C09E',
+  BLUE_500 = '#547CE4',
+}
 
-export const BLACK = {
-  900: '#000000',
-};
-
-export const YELLOW = {
-  500: '#cbba64',
-};
-
-export const MINT = {
-  500: '#04C09E',
-};
-
-export const BLUE = {
-  500: '#547CE4',
-};
+export default PALETTE;

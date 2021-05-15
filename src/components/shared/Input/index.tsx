@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MINT } from '../../../constants/palette';
+import PALETTE from '../../../constants/palette';
 import { vibrate } from '../../../utils/vibrate';
 
 interface Props {
@@ -15,7 +15,7 @@ const Input = styled.input<Props>`
   border: none;
   outline: none;
   font-size: 1.125rem;
-  color: ${({ color }) => color || MINT[500]};
+  color: ${({ color }) => color || PALETTE.MINT_500};
   background-color: transparent;
   width: ${({ width }) => width || '100%'};
   ${({ textCenter }) => textCenter && `text-align: center;`}

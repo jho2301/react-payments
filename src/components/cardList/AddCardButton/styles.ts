@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { GRAY } from '../../../constants/palette';
+import PALETTE from '../../../constants/palette';
 import { mdSize } from '../../shared/CreditCard/styles';
 
 export const CardButton = styled.button`
   ${mdSize}
-  background-color: ${GRAY[100]};
+  background-color: ${PALETTE.GRAY_100};
   font-size: 3rem;
   font-weight: 500;
   border: none;
@@ -12,6 +12,6 @@ export const CardButton = styled.button`
   transition: background 0.15s ease-in;
 
   &:hover {
-    background-color: ${GRAY[200]};
+    background-color: ${PALETTE.GRAY_200};
   }
 `;

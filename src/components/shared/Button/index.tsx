@@ -1,6 +1,6 @@
 import { FC, MouseEvent, MouseEventHandler } from 'react';
 import styled, { css } from 'styled-components';
-import { GRAY, MINT } from '../../../constants/palette';
+import PALETTE from '../../../constants/palette';
 import { vibrate } from '../../../utils/vibrate';
 
 interface Props {
@@ -23,7 +23,7 @@ const Button = styled.button<Props>`
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 500;
-  color: ${({ color }) => color || MINT[500]};
+  color: ${({ color }) => color || PALETTE.MINT_500};
   ${({ position }) => position === 'bottom-right' && bottomRight}
   ${({ width }) => width && `width: ${width};`}
   ${({ height }) => height && `height: ${height};`}
@@ -57,7 +57,7 @@ export const IconButtonContainer = styled.div<IconButtonProps>`
     width: 3.5em;
     height: 3.5em;
     border-radius: 50%;
-    background-color: ${({ backgroundColor }) => backgroundColor || GRAY[100]};
+    background-color: ${({ backgroundColor }) => backgroundColor || PALETTE.GRAY_100};
     margin-bottom: 0.625rem;
     ${({ backgroundImage }) => backgroundImage && `background: url(${process.env.PUBLIC_URL + backgroundImage});`}
     background-size: cover;

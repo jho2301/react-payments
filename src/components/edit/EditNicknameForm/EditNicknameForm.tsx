@@ -1,7 +1,7 @@
 import { useEffect, useState, VFC } from 'react';
 import { useHistory } from 'react-router';
 import { ALERT } from '../../../constants/messages';
-import { BLACK } from '../../../constants/palette';
+import PALETTE from '../../../constants/palette';
 import { useCards } from '../../../context/CardsStateContext';
 import { Card } from '../../../types';
 import Button from '../../shared/Button';
@@ -44,7 +44,7 @@ const EditNicknameForm: VFC<Props> = ({ card }) => {
         size="lg"
       />
       <Input
-        color={BLACK[900]}
+        color={PALETTE.BLACK_900}
         value={nickname}
         onChange={({ target: { value } }) => setNickname(value)}
         underline

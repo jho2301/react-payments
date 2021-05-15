@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import styled from 'styled-components';
-import { GRAY, MINT } from '../../../constants/palette';
+import PALETTE from '../../../constants/palette';
 import Container from '../../shared/Container';
 
 export const AddCardFormContainer = styled.div`
@@ -14,7 +14,7 @@ export const AddCardFormContainer = styled.div`
     height: 0.375em;
     display: block;
     border-radius: 50%;
-    background-color: ${MINT[500]};
+    background-color: ${PALETTE.MINT_500};
   }
 
   .question-mark {
@@ -45,7 +45,14 @@ interface Props {
 }
 
 export const AddCardInputContainer: FC<Props> = ({ children, width, margin }) => (
-  <Container flex justifyContent="center" alignItems="center" backgroundColor={GRAY[100]} width={width} margin={margin}>
+  <Container
+    flex
+    justifyContent="center"
+    alignItems="center"
+    backgroundColor={PALETTE.GRAY_100}
+    width={width}
+    margin={margin}
+  >
     {children}
   </Container>
 );
